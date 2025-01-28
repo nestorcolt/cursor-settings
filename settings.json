@@ -2,21 +2,18 @@
     "window.commandCenter": 1,
     "python.terminal.activateEnvInCurrentTerminal": true,
     "python.venvPath": "${workspaceFolder}/venv",
+    "python.envFile": "${workspaceFolder}/.env",
     "python.createEnvironment.contentButton": "show",
     "python.globalModuleInstallation": false,
+    
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
     "editor.multiCursorModifier": "ctrlCmd",
     "workbench.colorTheme": "Visual Studio Dark",
-    "terminal.integrated.profiles.windows": {
-        "Cmder": {
-            "path": "${env:windir}\\System32\\wsl.exe",
-            "icon": "terminal-cmd",
-            "color": "terminal.ansiGreen"
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "Cmder",
+
     "terminal.integrated.defaultLocation": "view",
+    "python.terminal.activateEnvironment": true,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.editorAssociations": {
         "*.json": "default"
@@ -24,7 +21,7 @@
     "editor.accessibilitySupport": "off",
     "redhat.telemetry.enabled": true,
     "yaml.schemas": {
-        "file:///c%3A/Users/U6070445/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
+        "file:///home/${USER}/.vscode-server/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
     },
     "grammarly.files.include": [
         "**/readme.md",
@@ -51,17 +48,6 @@
     },
     "git.openRepositoryInParentFolders": "never",
     "git.autofetch": true,
-    "remote.SSH.remotePlatform": {
-        "golden-ami-access": "linux",
-        "tools-prod": "linux",
-        "tools-dev": "linux",
-        "tools-dev-base-ami": "linux",
-        "tools-dev-master": "linux",
-        "tools-dev-env": "linux"
-    },
-    "security.allowedUNCHosts": [
-        "wsl.localhost"
-    ],
     "github.copilot.editor.enableAutoCompletions": true,
     "[markdown]": {
         "diffEditor.ignoreTrimWhitespace": true
