@@ -4,18 +4,66 @@
     "python.venvPath": "${workspaceFolder}/venv",
     "python.createEnvironment.contentButton": "show",
     "python.globalModuleInstallation": false,
-    "workbench.colorCustomizations": {},
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
     "editor.multiCursorModifier": "ctrlCmd",
     "workbench.colorTheme": "Visual Studio Dark",
-
     "terminal.integrated.profiles.windows": {
         "Cmder": {
-          "path": "${env:windir}\\System32\\cmd.exe",
-          "args": ["/k", "%CMDER_ROOT%\\vendor\\bin\\vscode_init.cmd"]
+            "path": "${env:windir}\\System32\\wsl.exe",
+            "icon": "terminal-cmd",
+            "color": "terminal.ansiGreen"
         }
-      },
+    },
     "terminal.integrated.defaultProfile.windows": "Cmder",
-    "terminal.integrated.defaultLocation": "view"
+    "terminal.integrated.defaultLocation": "view",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editorAssociations": {
+        "*.json": "default"
+    },
+    "editor.accessibilitySupport": "off",
+    "redhat.telemetry.enabled": true,
+    "yaml.schemas": {
+        "file:///c%3A/Users/U6070445/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
+    },
+    "grammarly.files.include": [
+        "**/readme.md",
+        "**/README.md",
+        "**/*.txt",
+        "**/*.tf"
+    ],
+    "[yaml]": {
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[dockercompose]": {
+        "editor.autoIndent": "advanced"
+    },
+    "[github-actions-workflow]": {
+        "editor.autoIndent": "advanced"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "explorer.confirmDelete": false,
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "git.autofetch": true,
+    "remote.SSH.remotePlatform": {
+        "golden-ami-access": "linux",
+        "tools-prod": "linux",
+        "tools-dev": "linux",
+        "tools-dev-base-ami": "linux",
+        "tools-dev-master": "linux",
+        "tools-dev-env": "linux"
+    },
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "github.copilot.editor.enableAutoCompletions": true,
+    "[markdown]": {
+        "diffEditor.ignoreTrimWhitespace": true
+    }
 }
