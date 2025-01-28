@@ -1,0 +1,52 @@
+[
+    {
+        "key": "shift+alt+z",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "terminal.focus",
+                "workbench.action.terminal.moveToEditor",
+                "workbench.action.moveEditorToNewWindow"
+            ]
+        }
+    },
+    {
+        "key": "shift+space",
+        "command": "python.execInTerminal-icon"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "-editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+space",
+        "command": "python.execInDedicatedTerminal"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.clear"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "aichat.newchataction",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-aichat.newchataction"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "-workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "editor.action.transformToLowercase"
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "window.commandCenter": 1,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.venvPath": "${workspaceFolder}/venv",
+    "python.createEnvironment.contentButton": "show",
+    "python.globalModuleInstallation": false,
+    "workbench.colorCustomizations": {},
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.colorTheme": "Visual Studio Dark",
+
+    "terminal.integrated.profiles.windows": {
+        "Cmder": {
+          "path": "${env:windir}\\System32\\cmd.exe",
+          "args": ["/k", "%CMDER_ROOT%\\vendor\\bin\\vscode_init.cmd"]
+        }
+      },
+    "terminal.integrated.defaultProfile.windows": "Cmder",
+    "terminal.integrated.defaultLocation": "view"
+}
