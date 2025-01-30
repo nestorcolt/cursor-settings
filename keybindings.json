@@ -1,16 +1,5 @@
 [
     {
-        "key": "shift+alt+z",
-        "command": "extension.multiCommand.execute",
-        "args": {
-            "sequence": [
-                "terminal.focus",
-                "workbench.action.terminal.moveToEditor",
-                "workbench.action.moveEditorToNewWindow"
-            ]
-        }
-    },
-    {
         "key": "shift+space",
         "command": "python.execInTerminal-icon"
     },
@@ -64,5 +53,13 @@
     {
         "key": "ctrl+j",
         "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "shift+alt+x",
+        "command": "workbench.action.moveEditorToNewWindow"
+    },
+    {
+        "key": "shift+alt+z",
+        "command": "workbench.action.terminal.moveIntoNewWindow"
     }
 ]

@@ -1,15 +1,13 @@
 {
     "window.commandCenter": 1,
     "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.venvPath": "${workspaceFolder}/venv",
+    "python.venvPath": "${workspaceFolder}/.venv",
     "python.envFile": "${workspaceFolder}/.env",
     "python.createEnvironment.contentButton": "show",
     "python.globalModuleInstallation": false,
-    
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
     "workbench.colorTheme": "Visual Studio Dark",
-
     "terminal.integrated.defaultLocation": "view",
     "python.terminal.activateEnvironment": true,
     "python.defaultInterpreterPath": "/usr/bin/python3",
@@ -51,5 +49,15 @@
     "[markdown]": {
         "diffEditor.ignoreTrimWhitespace": true
     },
-    "editor.multiCursorModifier": "ctrlCmd"
+    "editor.multiCursorModifier": "ctrlCmd",
+    // WSL
+    "terminal.integrated.profiles.linux": {
+        "WSL": {
+            "path": "/mnt/c/Cmder/vendor/bin/vscode_init.cmd",
+            "args": [
+                "-d",
+                "Ubuntu"
+            ]
+        }
+    }
 }
