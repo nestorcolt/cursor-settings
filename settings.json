@@ -1,48 +1,28 @@
 {
-    "window.commandCenter": 1,
+    "terminal.integrated.env.linux": {
+        "VSCODE_SUDO": "1"
+    },
+    "terminal.integrated.sudoUser": "colt",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "remote.SSH.showLoginTerminal": true,
+    "window.commandCenter": true,
     "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.venvPath": "${workspaceFolder}/.venv",
-    "python.envFile": "${workspaceFolder}/.env",
-    "python.createEnvironment.contentButton": "show",
-    "python.globalModuleInstallation": false,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
     "workbench.colorTheme": "Visual Studio Dark",
     "terminal.integrated.defaultLocation": "view",
-    "python.terminal.activateEnvironment": true,
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.editorAssociations": {
         "*.json": "default"
     },
     "editor.accessibilitySupport": "off",
-    "redhat.telemetry.enabled": true,
-    "yaml.schemas": {
-        "file:///home/${USER}/.vscode-server/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
-    },
-    "grammarly.files.include": [
-        "**/readme.md",
-        "**/README.md",
-        "**/*.txt",
-        "**/*.tf"
-    ],
-    "[yaml]": {
-        "editor.autoIndent": "advanced",
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[dockercompose]": {
-        "editor.autoIndent": "advanced"
-    },
-    "[github-actions-workflow]": {
-        "editor.autoIndent": "advanced"
-    },
+    // Removed yaml settings as you don't have the YAML extension
     "[python]": {
         "editor.formatOnType": true
     },
     "explorer.confirmDelete": false,
-    "[shellscript]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
+    // Removed shellscript settings as you don't have the extension
     "git.openRepositoryInParentFolders": "never",
     "git.autofetch": true,
     "github.copilot.editor.enableAutoCompletions": true,
@@ -50,14 +30,46 @@
         "diffEditor.ignoreTrimWhitespace": true
     },
     "editor.multiCursorModifier": "ctrlCmd",
-    // WSL
-    "terminal.integrated.profiles.linux": {
-        "WSL": {
-            "path": "/mnt/c/Cmder/vendor/bin/vscode_init.cmd",
-            "args": [
-                "-d",
-                "Ubuntu"
-            ]
-        }
-    }
+    // Pylance and Python settings
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    // Basic editor settings
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        100
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "python.languageServer": "Pylance",
+    // Customize diagnostic severity levels
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportGeneralTypeIssues": "information",
+        "reportOptionalMemberAccess": "information",
+        "reportUnusedFunction": "warning",
+        "reportUnusedImport": "warning",
+        "reportUnusedVariable": "information"
+    },
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.linting.vulture.executablePath": "${workspaceFolder}/.venv/bin/vulture",
+    "python.linting.vulture.enabled": true,
+    "python.linting.enabled": true,
+    // Error Lens settings
+    "errorLens.enabled": true,
+    "errorLens.enabledInMergeConflict": true,
+    "errorLens.messageTemplate": "$message",
+    "errorLens.fontStyleItalic": true,
+    "errorLens.statusBarMessageEnabled": true,
+    "errorLens.statusBarColorsEnabled": true,
+    "errorLens.messageEnabled": false,
+    "errorLens.messageBackgroundMode": "none",
+    "errorLens.errorBackground": "#fff0",
+    "errorLens.warningBackground": "#fff0",
+    "errorLens.infoBackground": "#fff0",
+    "errorLens.hintBackground": "#fff0",
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "update.mode": "none",
+    "extensions.autoUpdate": false,
+    "update.showReleaseNotes": false
 }

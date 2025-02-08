@@ -13,19 +13,6 @@
         "command": "python.execInDedicatedTerminal"
     },
     {
-        "key": "ctrl+l",
-        "command": "workbench.action.terminal.clear"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "aichat.newchataction",
-        "when": "!terminalFocus"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "-aichat.newchataction"
-    },
-    {
         "key": "ctrl+shift+u",
         "command": "-workbench.action.output.toggleOutput",
         "when": "workbench.panel.output.active"
@@ -61,5 +48,44 @@
     {
         "key": "shift+alt+z",
         "command": "workbench.action.terminal.moveIntoNewWindow"
+    },
+    {
+        "key": "ctrl+oem_4",
+        "command": "composer.openAsEditor"
+    },
+    {
+        "key": "ctrl+oem_6",
+        "command": "composer.openAsPane"
+    },
+    {
+        "key": "ctrl+oem_4",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+oem_6",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "-workbench.action.lastEditorInGroup"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "-workbench.action.focusEighthEditorGroup"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "composer.openChatAsEditor"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "aichat.newchataction",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-aichat.newchataction"
     }
 ]
