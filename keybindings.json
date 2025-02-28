@@ -87,5 +87,37 @@
     {
         "key": "ctrl+l",
         "command": "-aichat.newchataction"
+    },
+    {
+        "key": "ctrl+shift+oem_3",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "workbench.action.terminal.toggleTerminal",
+                "workbench.action.focusActiveEditorGroup",
+                "workbench.action.terminal.moveIntoNewWindow"
+            ]
+        }
+    },
+    {
+        "key": "ctrl+shift+oem_3",
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "workbench.action.terminal.new",
+                "workbench.action.focusActiveEditorGroup",
+                "workbench.action.terminal.moveIntoNewWindow"
+            ]
+        }
     }
 ]
