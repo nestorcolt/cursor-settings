@@ -2,14 +2,11 @@
     "terminal.integrated.env.linux": {
         "VSCODE_SUDO": "1"
     },
-    "terminal.integrated.sudoUser": "colt",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "remote.SSH.showLoginTerminal": true,
     "window.commandCenter": true,
     "python.terminal.activateEnvInCurrentTerminal": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 500,
-    "workbench.colorTheme": "Visual Studio Dark",
     "terminal.integrated.defaultLocation": "view",
     "python.defaultInterpreterPath": "/usr/bin/python3",
     "security.workspace.trust.untrustedFiles": "open",
@@ -71,5 +68,6 @@
     },
     "update.mode": "none",
     "extensions.autoUpdate": false,
-    "update.showReleaseNotes": false
+    "update.showReleaseNotes": false,
+    "workbench.activityBar.orientation": "vertical"
 }
