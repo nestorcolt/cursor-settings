@@ -69,5 +69,17 @@
     "update.mode": "none",
     "extensions.autoUpdate": false,
     "update.showReleaseNotes": false,
-    "workbench.activityBar.orientation": "vertical"
+    "workbench.activityBar.orientation": "vertical",
+    "cursor.general.disableHttp2": true,
+    // "yaml.validate": false,
+    "redhat.telemetry.enabled": true,
+    "vs-kubernetes": {
+        "vs-kubernetes.crd-code-completion": "disabled",
+        "vs-kubernetes.ignore-recommendations": true
+    },
+    "remote.SSH.remotePlatform": {
+        "onyx-debug": "linux"
+    },
+    "makefile.configureOnOpen": false,
+    "workbench.colorTheme": "Default Dark Modern",
 }

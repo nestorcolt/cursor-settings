@@ -76,7 +76,7 @@
         "command": "-workbench.action.focusEighthEditorGroup"
     },
     {
-        "key": "ctrl+8",
+        "key": "ctrl+oem_4",
         "command": "composer.openChatAsEditor"
     },
     {
